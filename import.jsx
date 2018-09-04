@@ -1,6 +1,6 @@
 
 app.beginUndoGroup("Importación y añadido");
-var myFile = new File ("/Users/javige/Desktop/luna\ 02.mov");
+var myFile = new File ("/Users/javige/Desktop/luna\ 02.mov"); // cambia por el que quieras
 var myImportOptions = new ImportOptions();
 myImportOptions.file = myFile;
 
