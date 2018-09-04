@@ -13,7 +13,7 @@ alert(numProj);
 
 var selection = undefined;
 
-for (var i = 1; i<= numProj, i+=1;){
+for (var i = 1; i<= numProj; i++){
     
     if (proj.item(i).name == "luna 02.mov"){
     selection = proj.item(i);
