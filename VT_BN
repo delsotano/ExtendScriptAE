@@ -1,0 +1,17 @@
+app.beginUndoGroup("Cambio");
+
+var selection = [];
+
+selection= app.project.selection;
+
+for(i=0; i< selection.length; i++){
+    
+    selection[i].layer(1).effect.addProperty("ADBE HUE SATURATION");
+    selection[i].layer(1).effect("Hue/Saturation").property("Master Saturation").setValue(-100);
+    selection[i].layer(1).effect("Hue/Saturation").property("Master Lightness").setValue(100);
+    selection[i].layer(2).effect.addProperty("ADBE HUE SATURATION");
+    selection[i].layer(2).effect("Hue/Saturation").property("Master Saturation").setValue(-100);
+    selection[i].layer(2).effect("Hue/Saturation").property("Master Lightness").setValue(-100);
+    }
+
+app.endUndoGroup();
