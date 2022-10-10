@@ -1,0 +1,32 @@
+//sacado de CreativeCow
+
+if (time < inPoint || time > outPoint){
+f = 0;
+}else if (time < inPoint+outPoint/2){
+f = timeToFrames(time - inPoint);
+}else{
+f = timeToFrames(outPoint - time);
+}
+switch(f){
+case 0:
+case 2:
+case 4:
+case 6:
+0;
+break;
+case 1:
+25;
+break;
+case 3:
+50;
+break;
+case 5:
+75;
+break;
+case 7:
+100;
+break;
+default:
+100;
+break;
+}
