@@ -1,0 +1,21 @@
+// Creación de Guias TikTok
+
+
+app.beginUndoGroup("GuiasTikTok");
+
+var comp = app.project.activeItem;
+
+if ((comp == null) || (!(comp instanceof CompItem))){
+    alert("Selecciona la compo");
+    }
+
+comp.addGuide(1,780);
+comp.addGuide(1,1024);
+comp.addGuide(0,108);
+comp.addGuide(1,56);
+comp.addGuide(0,1620);
+
+
+
+
+app.endUndoGroup();
