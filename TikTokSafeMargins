@@ -15,6 +15,13 @@ comp.addGuide(0,108);
 comp.addGuide(1,56);
 comp.addGuide(0,1620);
 
+visor = app.activeViewer;
+
+visor.setActive();
+app.executeCommand(2275);
+if (visor.views[0].options.guidesLocked === true) { alert("guías bloqueadas")} else {alert("bloquea las guías")};
+
+
 
 
 
